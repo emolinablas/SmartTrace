@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:gravity="center">
+
+        <EditText
+            android:id="@+id/login_username_edittext"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="USUARIO" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/login_password_edittext"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="CONTRASEÑA" />
+
+        <Button
+            android:id="@+id/login_enter_button"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="ENTRAR" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/login_licorera" 
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

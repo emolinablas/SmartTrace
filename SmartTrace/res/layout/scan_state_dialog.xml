@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="left|center">
+        
+        <TextView 
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Luz:"/>
+
+        <ToggleButton
+            android:id="@+id/estadoLuzButton"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:textOn="ADECUADA" 
+            android:textOff="INADECUADA" 
+            android:checked="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" 
+        android:gravity="left|center">
+        
+        <TextView 
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Temperatura:"/>
+        
+        <Spinner 
+            android:id="@+id/tempSpinner"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="left|center">
+        
+        <TextView 
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Foto:"/>
+        
+        <Button 
+            android:id="@+id/fotoButton"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Tomar Foto"/>
+    </LinearLayout>
+    
+</LinearLayout>

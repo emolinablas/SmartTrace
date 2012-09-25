@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.researchmobile.smarttrace.view"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/logo_lg"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Actions"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ScanControl" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="Scan" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.Result"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.Process"></activity>
+        
+        <!-- Activitys para modulo de ARMAR -->
+        <activity android:name="com.researchmobile.smarttrace.view.ArmControl"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.ArmStart" android:screenOrientation="landscape" android:configChanges="orientation"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.ArmStop"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.ArmSummary"></activity>
+        
+        <!-- Activitys para modulo de RASPAR -->
+        <activity android:name="com.researchmobile.smarttrace.view.RasControl"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.RasStart" android:screenOrientation="landscape" android:configChanges="orientation"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.RasStop"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.RasSummary"></activity>
+        
+        <!-- Activitys para modulo de REPARAR-->
+        <activity android:name="com.researchmobile.smarttrace.view.RepControl"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.RepStart" android:screenOrientation="landscape" android:configChanges="orientation"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.RepStop"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.RepSummary"></activity>
+        
+        <!-- Activitys para modulo de QUEMAR -->
+        <activity android:name="com.researchmobile.smarttrace.view.QuemarControl"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.QuemarStart" android:screenOrientation="landscape" android:configChanges="orientation"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.QuemarStop"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.QuemarSummary"></activity>
+        
+         <!-- Activitys para modulo de EMPANZAR -->
+        <activity android:name="com.researchmobile.smarttrace.view.EmpanzarControl"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.EmpStart" android:screenOrientation="landscape" android:configChanges="orientation"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.EmpStop"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.EmpSummary"></activity>
+    </application>
+
+</manifest>

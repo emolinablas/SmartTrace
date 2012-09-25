@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40sp"
+    android:orientation="horizontal"
+    android:gravity="left|center" >
+
+    <TextView
+        android:id="@+id/row_ras_summary_code"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+    
+    <TextView
+        android:id="@+id/row_ras_summary_state"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+    
+    <TextView
+        android:id="@+id/row_ras_summary_date1"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+    
+    <TextView
+        android:id="@+id/row_ras_summary_date2"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+</LinearLayout>

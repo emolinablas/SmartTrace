@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="top|center" android:background="@drawable/background1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCIONES" android:textColor="#000000" android:textStyle="bold" android:textSize="16sp" android:background="@drawable/sincho" android:gravity="left|center" android:layout_marginBottom="10sp" android:layout_marginTop="10sp" android:paddingLeft="10sp"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:gravity="top|center">
+        	
+            <LinearLayout 
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:gravity="center">
+                
+                <ImageButton
+                android:id="@+id/actions_procesos_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/procesos" />
+                
+                <TextView 
+                    android:id="@+id/tv001"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Procesos" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>"
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:gravity="center">
+                
+                <ImageButton
+                android:id="@+id/acctions_asociar_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/asociar" />
+                
+                <TextView 
+                    android:id="@+id/tv001"
+                    android:layout_width="120sp"
+                    android:layout_height="match_parent"
+                    android:text="Asociar/Disociar Barriles a Tarima" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:gravity="center">
+        	
+            <LinearLayout 
+                android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:gravity="center">
+                
+                <ImageButton
+                android:id="@+id/actions_enviar_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/enviar" />
+                
+                <TextView 
+                    android:id="@+id/tv001"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:gravity="center">
+                
+                <ImageButton
+                android:id="@+id/actions_reportes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reportes" />
+                
+                <TextView 
+                    android:id="@+id/tv001"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Reportes" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:gravity="center">
+        	
+            <LinearLayout 
+                android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:gravity="center">
+                
+                <ImageButton
+                android:id="@+id/actions_procesosvarior_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/procesos" />
+                
+                <TextView 
+                    android:id="@+id/tv001"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Procesos Varios" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:gravity="center">
+                
+                <ImageButton
+                android:id="@+id/actions_mezclas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mezclas" />
+                
+                <TextView 
+                    android:id="@+id/tv001"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Mezclas" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
