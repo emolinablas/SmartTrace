@@ -30,13 +30,13 @@
             android:orientation="horizontal">
             
             <TextView 
-                android:layout_width="130sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:text="Usuario" android:textColor="#000000" android:textStyle="bold"/>
             
             <EditText 
                 android:id="@+id/rep_stop_user_edittext"
-                android:layout_width="150sp"
+                android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:hint="Usuario:"/>
             
@@ -48,13 +48,13 @@
             android:orientation="horizontal">
             
             <TextView 
-                android:layout_width="130sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:text="Barril:" android:textColor="#000000" android:textStyle="bold"/>
             
             <EditText 
                 android:id="@+id/rep_stop_barril_edittext"
-                android:layout_width="150sp"
+                android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:hint="Barril"/>
             
@@ -109,18 +109,24 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" android:gravity="center">
             
-            <RadioButton 
-                android:id="@+id/rep_stop_allend_radiobutton"
+            <RadioGroup 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fin Total"
-                android:checked="true" android:layout_marginRight="40sp" android:textColor="#000000"/>
+                android:orientation="horizontal">
             
-            <RadioButton 
-                android:id="@+id/rep_stop_parcialend_radiobutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fin Parcial" android:textColor="#000000"/>"
+	            <RadioButton 
+	                android:id="@+id/rep_stop_allend_radiobutton"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Fin Total"
+	                android:checked="true" android:layout_marginRight="40sp" android:textColor="#000000"/>
+	            
+	            <RadioButton 
+	                android:id="@+id/rep_stop_parcialend_radiobutton"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Fin Parcial" android:textColor="#000000"/>
+            </RadioGroup>
         </LinearLayout>
         
         <LinearLayout 
