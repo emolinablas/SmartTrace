@@ -30,13 +30,13 @@
             android:orientation="horizontal">
             
             <TextView 
-                android:layout_width="130sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:text="Usuario" android:textColor="#000000" android:textStyle="bold"/>
             
             <EditText 
                 android:id="@+id/arm_stop_user_edittext"
-                android:layout_width="150sp"
+                android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:hint="Usuario:"/>
             
@@ -48,13 +48,13 @@
             android:orientation="horizontal">
             
             <TextView 
-                android:layout_width="130sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:text="Barril:" android:textColor="#000000" android:textStyle="bold"/>
             
             <EditText 
                 android:id="@+id/arm_stop_barril_edittext"
-                android:layout_width="150sp"
+                android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:hint="Barril"/>
             
