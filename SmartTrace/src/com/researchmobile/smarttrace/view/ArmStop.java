@@ -1,7 +1,5 @@
 package com.researchmobile.smarttrace.view;
 
-import com.researchmobile.smarttrace.entity.BarrelList;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +10,9 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.researchmobile.smarttrace.entity.BarrelList;
+import com.researchmobile.smarttrace.utility.MyDate;
 
 public class ArmStop extends Activity implements OnClickListener{
 	
@@ -37,6 +38,7 @@ public class ArmStop extends Activity implements OnClickListener{
 		setBarrilCodeEditText((EditText)findViewById(R.id.arm_stop_barril_edittext));
 		setInservibleTapaderaEditText((EditText)findViewById(R.id.arm_stop_inservible_tapadera_edittext));
 		setInservibleBarrilEditText((EditText)findViewById(R.id.arm_stop_inservible_barril_edittext));
+		setDuelasEditText((EditText)findViewById(R.id.arm_stop_duelas_edittext));
 		
 		setOrigenSpinner((Spinner)findViewById(R.id.arm_stop_origen_spinner));
 		
@@ -52,7 +54,7 @@ public class ArmStop extends Activity implements OnClickListener{
 	public void onClick(View view){
 		//Control Buttons
 		if (view == getFinishButton()){
-			
+			finalizarProceso();
 		}
 		
 		//Control EditText
@@ -60,6 +62,34 @@ public class ArmStop extends Activity implements OnClickListener{
 			activeScanUser();
 		}
 		
+	}
+
+
+	private void finalizarProceso() {
+		if (getUserCodeEditText().getText().toString().equalsIgnoreCase("")){
+			
+		}else{
+			MyDate mDate = new MyDate();
+			BarrelList list = new BarrelList();
+			String usuario = getUserCodeEditText().getText().toString();
+			int tamano = list.getBarrelList().size();
+			for (int i = 0; i < tamano; i++){
+				if (list.getBarrelList().get(i).getUser().equalsIgnoreCase(usuario)){
+					list.getBarrelList().get(i).setDate2(mDate.FechaHoy() + " " + mDate.Hora());
+					list.getBarrelList().get(i).setState("Finalizado");
+					clearComponent();
+				}
+			}
+		}
+	}
+
+
+	private void clearComponent() {
+		getUserCodeEditText().setText("");
+		getBarrilCodeEditText().setText("");
+		getInservibleBarrilEditText().setText("");
+		getInservibleTapaderaEditText().setText("");
+		getDuelasEditText().setText("");
 	}
 
 
