@@ -20,9 +20,9 @@ public class LlenControl extends TabActivity implements OnTabChangeListener{
         Drawable drawNote = getResources().getDrawable(R.drawable.selector_note);
 
 		setmTabHost(getTabHost());
-		getmTabHost().addTab(getmTabHost().newTabSpec("sample2").setIndicator("INICIAR", drawClock).setContent(new Intent(this, ArmStart.class)));
-		getmTabHost().addTab(getmTabHost().newTabSpec("sample3").setIndicator("FINALIZAR", drawStop).setContent(new Intent(this, ArmStop.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)));
-		getmTabHost().addTab(getmTabHost().newTabSpec("sample4").setIndicator("RESUMEN", drawNote).setContent(new Intent(this, ArmSummary.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)));
+		getmTabHost().addTab(getmTabHost().newTabSpec("sample2").setIndicator("INICIAR", drawClock).setContent(new Intent(this, LlenStart.class)));
+		getmTabHost().addTab(getmTabHost().newTabSpec("sample3").setIndicator("FINALIZAR", drawStop).setContent(new Intent(this, LlenStop.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)));
+		getmTabHost().addTab(getmTabHost().newTabSpec("sample4").setIndicator("RESUMEN", drawNote).setContent(new Intent(this, LlenSummary.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)));
 		//Hola, mi nombre es Wuilder Alvarado
 
 		getmTabHost().setCurrentTabByTag("wifiMenu");
