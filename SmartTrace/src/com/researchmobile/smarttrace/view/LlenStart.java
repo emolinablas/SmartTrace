@@ -25,7 +25,7 @@ public class LlenStart extends Activity implements OnClickListener{
 	
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.arm_start);
+		setContentView(R.layout.llen_start);
 		
 		ComponentPrepare();
 		//CapturarUsuario();
@@ -36,11 +36,11 @@ public class LlenStart extends Activity implements OnClickListener{
 		setMyDate(new MyDate());
 		setList(new BarrelList());
 		
-		setUserCodeEditText((EditText)findViewById(R.id.arm_start_username_edittext));
+		setUserCodeEditText((EditText)findViewById(R.id.llen_start_username_edittext));
 		getUserCodeEditText().setOnClickListener(this);
-		setBarrelCodeEditText((EditText)findViewById(R.id.arm_start_barrel_edittext));
+		setBarrelCodeEditText((EditText)findViewById(R.id.llen_start_barrel_edittext));
 		getBarrelCodeEditText().setOnClickListener(this);
-		setStartButton((Button)findViewById(R.id.arm_start_enter_button));
+		setStartButton((Button)findViewById(R.id.llen_start_enter_button));
 		getStartButton().setOnClickListener(this);
 	}
 

@@ -52,6 +52,13 @@
         <activity android:name="com.researchmobile.smarttrace.view.EmpStart" android:screenOrientation="landscape" android:configChanges="orientation"></activity>
         <activity android:name="com.researchmobile.smarttrace.view.EmpStop"></activity>
         <activity android:name="com.researchmobile.smarttrace.view.EmpSummary"></activity>
+         
+        <!-- Activitys para modulo de LLENAR -->
+        <activity android:name="com.researchmobile.smarttrace.view.LlenControl"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.LlenStart" android:screenOrientation="landscape" android:configChanges="orientation"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.LlenStop"></activity>
+        <activity android:name="com.researchmobile.smarttrace.view.LlenSummary"></activity>
+        
     </application>
 
 </manifest>

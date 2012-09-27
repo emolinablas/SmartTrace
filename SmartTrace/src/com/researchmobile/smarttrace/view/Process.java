@@ -73,8 +73,8 @@ public class Process extends Activity implements OnClickListener{
 		startActivity(intent);
 	}
 	private void ActivityLlenar(){
-		//Intent intent = new Intent (Process.this,LlenarControl.class);
-		//startActivity(intent);
+		Intent intent = new Intent (Process.this,LlenControl.class);
+		startActivity(intent);
 	}
 
 	public ImageButton getArmarButton() {

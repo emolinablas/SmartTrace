@@ -19,24 +19,17 @@ public class LlenStop extends Activity implements OnClickListener{
 	
 	public void onCreate(Bundle saveInstanceState){
 		super.onCreate(saveInstanceState);
-		setContentView(R.layout.arm_stop);
+		setContentView(R.layout.llen_stop);
 		
 		ComponentPrepare();
 	}
 
 	
 	private void ComponentPrepare() {
-		setUserCodeEditText((EditText)findViewById(R.id.arm_stop_user_edittext));
-		setBarrilCodeEditText((EditText)findViewById(R.id.arm_start_barrel_edittext));
-		setInservibleTapaderaEditText((EditText)findViewById(R.id.arm_stop_inservible_tapadera_edittext));
-		setInservibleBarrilEditText((EditText)findViewById(R.id.arm_stop_inservible_barril_edittext));
+		setUserCodeEditText((EditText)findViewById(R.id.llen_stop_user_edittext));
+		setBarrilCodeEditText((EditText)findViewById(R.id.llen_start_barrel_edittext));
 		
-		setOrigenSpinner((Spinner)findViewById(R.id.arm_stop_origen_spinner));
-		
-		setAllFinishRadioButton((RadioButton)findViewById(R.id.arm_stop_allend_radiobutton));
-		setParcialFinishRadioButton((RadioButton)findViewById(R.id.arm_stop_parcialend_radiobutton));
-		
-		setFinishButton((Button)findViewById(R.id.arm_stop_finish_button));
+		setFinishButton((Button)findViewById(R.id.llen_stop_finish_button));
 		getFinishButton().setOnClickListener(this);
 		
 	}
